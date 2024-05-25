@@ -1,0 +1,95 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.chat-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* 将内容从顶部对齐 */
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+
+.chat-messages {
+    overflow-y: auto;
+    max-height: 80vh;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.user-message {
+    align-self: flex-end;
+    background-color: #dcf8c6;
+}
+
+.system-message {
+    align-self: flex-start;
+    background-color: #f0f0f0;
+}
+
+
+.input-container {
+    width: 100%;
+    margin-top: auto; /* 将发送部分推到屏幕底部 */
+    display: flex;
+    justify-content: center;
+}
+
+.code-container {
+    display: flex;
+    align-items: center;
+    background-color: #0a0a0a;
+    padding: 10px;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+.code-text {
+    color: white;
+}
+
+
+input[type="text"] {
+    flex: 1;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+
+label[for="context-dialogue"] {
+    margin-left: 5px;
+    margin-top: 5px;
+    color: #333;
+    font-size: 14px;
+}
+
+input[type="checkbox"] {
+    margin-top: 6px;
+    margin-right: 10px; /* 调整复选框与文本之间的间距 */
+}

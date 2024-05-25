@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT</title>
+    <link rel="stylesheet" href="chatgpt.css">
+</head>
+<body>
+    <div class="chat-container">         
+        <h1 class="chat-header">ChatGPT</h1>          
+        <div class="chat-messages" id="chat-messages"></div>         
+        <div class="input-container">             
+            <input type="text" id="user-input" placeholder="输入内容...(回车可发送)">             
+            <input type="submit" value="发送" onclick="sendMessage()"> 
+            <label for="context-dialogue">上下文对话</label>
+            <input type="checkbox" id="context-dialogue" name="context-dialogue">
+        </div>     
+    </div>
+
+    <script src="gpt.js"></script>
+</body>
+</html>
